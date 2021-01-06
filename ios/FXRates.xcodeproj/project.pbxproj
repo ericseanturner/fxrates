@@ -19,6 +19,8 @@
 		07BEB13B25A4FA0F00141A2A /* NeumorphicButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BEB13A25A4FA0E00141A2A /* NeumorphicButtonStyle.swift */; };
 		07BEB13E25A4FA9500141A2A /* SmoothButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BEB13D25A4FA9500141A2A /* SmoothButton.swift */; };
 		07BEB14125A4FBFD00141A2A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BEB14025A4FBFD00141A2A /* Color.swift */; };
+		07BEB14525A53C5A00141A2A /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BEB14425A53C5900141A2A /* DatabaseService.swift */; };
+		07BEB15D25A54C8300141A2A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BEB15C25A54C8300141A2A /* View.swift */; };
 		7832CEDE3A74D32F379DAAC8 /* Pods_FXRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1259405CAE6DD5BE73D59982 /* Pods_FXRates.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		07BEB13A25A4FA0E00141A2A /* NeumorphicButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicButtonStyle.swift; sourceTree = "<group>"; };
 		07BEB13D25A4FA9500141A2A /* SmoothButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothButton.swift; sourceTree = "<group>"; };
 		07BEB14025A4FBFD00141A2A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		07BEB14425A53C5900141A2A /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		07BEB15C25A54C8300141A2A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		1259405CAE6DD5BE73D59982 /* Pods_FXRates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FXRates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		155BAD76F0AA3E9C874F5E00 /* Pods-FXRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXRates.debug.xcconfig"; path = "Target Support Files/Pods-FXRates/Pods-FXRates.debug.xcconfig"; sourceTree = "<group>"; };
 		8364AED142044BD40FB072C3 /* Pods-FXRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXRates.release.xcconfig"; path = "Target Support Files/Pods-FXRates/Pods-FXRates.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 		07BEB12325A4BA9700141A2A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				07BEB14425A53C5900141A2A /* DatabaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				07BEB14025A4FBFD00141A2A /* Color.swift */,
+				07BEB15C25A54C8300141A2A /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -309,8 +315,10 @@
 				07BEB13E25A4FA9500141A2A /* SmoothButton.swift in Sources */,
 				07BEB0FF25A4B70E00141A2A /* ContentView.swift in Sources */,
 				07BEB0FD25A4B70E00141A2A /* FXRatesApp.swift in Sources */,
+				07BEB14525A53C5A00141A2A /* DatabaseService.swift in Sources */,
 				07BEB13425A4C12300141A2A /* SelectCurrencyViewModel.swift in Sources */,
 				07BEB13B25A4FA0F00141A2A /* NeumorphicButtonStyle.swift in Sources */,
+				07BEB15D25A54C8300141A2A /* View.swift in Sources */,
 				07BEB14125A4FBFD00141A2A /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

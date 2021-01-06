@@ -17,7 +17,7 @@ struct CurrencyCell: View {
     init(_ currency: Currency, isSelected: Bool){
         self.currency = currency
         if isSelected {
-            self.color = Color.gray.opacity(0.2)
+            self.color = Color.gray.opacity(0.15)
         } else {
             self.color = Color.white
         }

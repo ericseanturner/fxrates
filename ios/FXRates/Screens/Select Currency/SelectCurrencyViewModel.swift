@@ -13,18 +13,19 @@ class SelectCurrencyViewModel : ObservableObject {
     
     init(){
         
-        let c1 = Currency(symbol: "USD", rateEUR: 123.00, date: Date())
-        let c2 = Currency(symbol: "GBP", rateEUR: 123.00, date: Date())
-        let c3 = Currency(symbol: "JPY", rateEUR: 123.00, date: Date())
-        let c4 = Currency(symbol: "CAD", rateEUR: 123.00, date: Date())
-        let c5 = Currency(symbol: "AUD", rateEUR: 123.00, date: Date())
+        DatabaseService.shared.listenForCurrencies(){
+            [weak self] (currencies, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let currencies = currencies {
+                self?.didUpdateCurrencies(currencies: currencies)
+            }
+        }
         
-        currencies.append(c1)
-        currencies.append(c2)
-        currencies.append(c3)
-        currencies.append(c4)
-        currencies.append(c5)
-        
+    }
+    
+    func didUpdateCurrencies(currencies: [Currency]){
+        self.currencies = currencies
     }
     
     func selectedCurrencyCount() -> Int {
